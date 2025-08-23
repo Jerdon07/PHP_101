@@ -18,10 +18,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/PHP_101/" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</a>
+              <a href="/PHP_101/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
               <a href="/PHP_101/about.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
-              <a href="/PHP_101/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Content</a>
-
+              <a href="/PHP_101/contact.php" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Contact</a>
             </div>
           </div>
         </div>
@@ -104,12 +103,12 @@
 
   <header class="relative bg-white shadow-sm">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Home</h1>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Contact Us</h1>
     </div>
   </header>
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <p>Hello! You are in the Home page.</p>
+      <p>Hello! You are in the Contact page.</p>
     </div>
   </main>
 </div>
