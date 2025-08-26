@@ -8,10 +8,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/PHP_101/" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</a>
-              <a href="/PHP_101/about.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
-              <a href="/PHP_101/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Content</a>
-
+              <a href="/PHP_101/" class="<?= urlIs('/PHP_101/') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium ">Home</a>
+              <a href="/PHP_101/about.php" class="<?= urlIs('/PHP_101/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">About</a>
+              <a href="/PHP_101/contact.php" class="<?= urlIs('/PHP_101/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Content</a>
             </div>
           </div>
         </div>
