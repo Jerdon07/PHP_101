@@ -1,7 +1,5 @@
 <?php
 
-require 'functions.php';
-
 $heading = "Home";
 
 // echo "test";
@@ -12,14 +10,6 @@ $heading = "Home";
 // var_dump($_SERVER);
 // echo "</pre>";
 // die();
-
-function dd($value) {
-    echo "<pre>";
-    var_dump($value);
-    echo "</pre>";
-
-    die();
-}
 
 // dd($_SERVER);
 // dd($heading);
