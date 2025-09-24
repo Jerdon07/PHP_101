@@ -6,18 +6,17 @@ require 'functions.php';
 // Connect to our MySQL Database.
 //PHP Data Objects (PDO) is a database access layer providing a uniform method of access to multiple databases.
 
-class Person{
-    public $name;
-    public $age;
+//DSN Data Source Name
+$dsn = "mysql:host=localhost;port=3306;dbname=myapp;charset=utf8";
 
-    public function breathe() {
-        echo $this->name . " is breathing. ";
-        echo "<br> Inhale... Exhale...";
-    }
+$pdo = new PDO($dsn, "root");
+
+$statement = $pdo -> prepare("SELECT * FROM `post`");
+
+$statement -> execute();
+
+$posts = $statement -> fetchAll(PDO::FETCH_ASSOC);
+
+foreach($posts as $post) {
+    echo "<li>" . $post['title'] . "</li>";
 }
-
-$person = new Person();
-
-$person->name = "John";
-$person->age = 30;
-$person->breathe();
