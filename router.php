@@ -5,6 +5,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path']; // URI Parsing
 $routes = [ // Routes Declaration
     '/PHP_101/' => 'controllers/index.php',
     '/PHP_101/about' => 'controllers/about.php',
+    '/PHP_101/notes' => 'controllers/notes.php',
     '/PHP_101/contact' => 'controllers/contact.php',
 ];
 

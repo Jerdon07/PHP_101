@@ -10,6 +10,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="/PHP_101/" class="<?= urlIs('/PHP_101/') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium ">Home</a>
               <a href="/PHP_101/about" class="<?= urlIs('/PHP_101/about') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">About</a>
+              <a href="/PHP_101/notes" class="<?= urlIs('/PHP_101/notes') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Notes</a>
               <a href="/PHP_101/contact" class="<?= urlIs('/PHP_101/contact') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-white/5 hover:text-white">Content</a>
             </div>
           </div>
