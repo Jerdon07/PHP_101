@@ -1,8 +1,14 @@
 <?php
 
+// All required files must run at the start
 require 'functions.php';
-require 'router.php';
 require 'Database.php';
+require 'router.php';
 
-$config = require 'config.php';
-$db = new Database($config['database']);    //Create Database Object
+/*
+The user will always hit this file first.
+This will loead all the required files.
+
+the functions.php file will to help with debugging and URL checking.
+The Database.php file will handle the database connection.
+*/

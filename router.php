@@ -1,7 +1,6 @@
 <?php
 
-$uri = parse_url($_SERVER['REQUEST_URI'])['path']; // URI Parsing
-
+$uri = parse_url($_SERVER['REQUEST_URI'])['path']; // Gives the URI, ignoring the query string
 $routes = [ // Routes Declaration
     '/PHP_101/' => 'controllers/index.php',
     '/PHP_101/about' => 'controllers/about.php',
@@ -9,19 +8,18 @@ $routes = [ // Routes Declaration
     '/PHP_101/contact' => 'controllers/contact.php',
 ];
 
-function routeToController($uri, $routes) { // Function to Handle Routing
-    if (array_key_exists($uri, $routes)) {
-        require $routes[$uri];
+function routeToController($uri, $routes) { // Decides which controller to Load based on the URI
+    if (array_key_exists($uri, $routes)) { // Check if the route exists
+        require $routes[$uri]; // It finds the key inside the routes array
     } else {
         abort();
     }
 }
 
-function abort($code = 404) { // Option to Abort with Different Status Codes
+function abort($code = 404) { // Abort if route doesn't exist
     http_response_code($code);
     
     require "views/{$code}.php";
-
     die();
 }
 
