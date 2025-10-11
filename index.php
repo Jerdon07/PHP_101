@@ -3,6 +3,7 @@
 // All required files must run at the start
 require 'functions.php';
 require 'Database.php';
+require 'Response.php';
 require 'router.php';
 
 /*
@@ -11,4 +12,5 @@ This will loead all the required files.
 
 the functions.php file will to help with debugging and URL checking.
 The Database.php file will handle the database connection.
+The Response.php file will handle the error response.
 */
