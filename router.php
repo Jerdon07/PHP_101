@@ -1,13 +1,8 @@
 <?php
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path']; // Gives the URI, ignoring the query string
-$routes = [ // Routes Declaration
-    '/PHP_101/' => 'controllers/index.php',
-    '/PHP_101/about' => 'controllers/about.php',
-    '/PHP_101/notes' => 'controllers/notes.php',
-    '/PHP_101/note' => 'controllers/note.php',
-    '/PHP_101/contact' => 'controllers/contact.php',
-];
+
+$routes = require 'routes.php';
 
 function routeToController($uri, $routes) { // Decides which controller to Load based on the URI
     if (array_key_exists($uri, $routes)) { // Check if the route exists
