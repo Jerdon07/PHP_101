@@ -8,8 +8,7 @@
       <?php foreach($notes as $note) : ?>
       <li>
         <a href="/PHP_101/note?id=<?= $note['id'];?>" class="text-blue-500 hover:underline"> 
-          <?= $note['title'] ?>
-        </a>
+          <?= htmlspecialchars($note['body']); ?>
       </li>
     <?php endforeach; ?>
     </ul>
